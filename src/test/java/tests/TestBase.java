@@ -5,7 +5,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
@@ -29,7 +28,7 @@ driver.findElement(By.cssSelector("span.selectBg.selectBgDest.dest div.ffSelectM
 driver.findElement(By.xpath("//*[@id='Div10']")).click();
     }
 
-    @AfterTest (enabled = false)
+    @AfterTest (enabled = true)
     public void quit(){
         driver.quit();
     }
