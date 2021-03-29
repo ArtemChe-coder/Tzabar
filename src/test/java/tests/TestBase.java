@@ -30,7 +30,7 @@ driver.findElement(By.xpath("//*[@id='Div10']")).click();
 
     @AfterTest (enabled = true)
     public void quit(){
-        driver.quit();
+        driver.close();
     }
 
 }
